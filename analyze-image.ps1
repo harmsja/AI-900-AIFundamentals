@@ -7,10 +7,8 @@ if ($args.count -gt 0)
 {
     $img_file = $args[0]
 } else {
-    $img_file = "store-camera-1.jpg"
+    $img_file = "https://raw.githubusercontent.com/harmsja/AI-900-AIFundamentals/main/data/vision/store-camera-1.jpg"
 }
-
-$img = "https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/vision/$img_file"
 
 $headers = @{}
 $headers.Add( "Ocp-Apim-Subscription-Key", $key )
