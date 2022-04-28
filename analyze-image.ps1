@@ -9,6 +9,8 @@ if ($args.count -gt 0)
 } else {
     $img_file = "https://raw.githubusercontent.com/harmsja/AI-900-AIFundamentals/main/data/vision/store-camera-1.jpg"
 }
+write-host "Image URL: "
+write-host $img_file
 
 $headers = @{}
 $headers.Add( "Ocp-Apim-Subscription-Key", $key )
