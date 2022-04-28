@@ -1,12 +1,13 @@
 $key="YOUR_KEY"
 $endpoint="YOUR_ENDPOINT"
 
-
 # Code to call Computer Vision service for image analysis
-$img_file = "store-camera-1.jpg"
-if ($args.count -gt 0 -And $args[0] -in ("store-camera-1.jpg", "store-camera-2.jpg", "store-camera-3.jpg", "store-camera-4.jpg"))
+
+if ($args.count -gt 0)
 {
     $img_file = $args[0]
+} else {
+    $img_file = "store-camera-1.jpg"
 }
 
 $img = "https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/vision/$img_file"
