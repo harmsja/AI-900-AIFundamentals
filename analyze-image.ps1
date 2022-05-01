@@ -5,12 +5,12 @@ $endpoint="YOUR_ENDPOINT"
 
 if ($args.count -gt 0)
 {
-    $img_file = $args[0]
+    $img = $args[0]
 } else {
-    $img_file = "https://raw.githubusercontent.com/harmsja/AI-900-AIFundamentals/main/data/vision/store-camera-1.jpg"
+    $img = "https://raw.githubusercontent.com/harmsja/AI-900-AIFundamentals/main/data/vision/store-camera-1.jpg"
 }
 write-host "Image URL: "
-write-host $img_file
+write-host $img
 
 $headers = @{}
 $headers.Add( "Ocp-Apim-Subscription-Key", $key )
