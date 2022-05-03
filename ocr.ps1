@@ -3,13 +3,8 @@ $endpoint="YOUR_ENDPOINT"
 
 
 # Code to call OCR service for text in image analysis
-$img_file = "advert.jpg"
-if ($args.count -gt 0 -And $args[0] -in ("advert.jpg", "letter.jpg", "note.jpg"))
-{
-    $img_file = $args[0]
-}
 
-$img = "https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/vision/$img_file"
+$img = "https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/vision/advert.jpg"
 
 $headers = @{}
 $headers.Add( "Ocp-Apim-Subscription-Key", $key )
