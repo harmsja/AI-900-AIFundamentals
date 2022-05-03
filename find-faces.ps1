@@ -1,5 +1,5 @@
-$key="YOUR_KEY"
-$endpoint="YOUR_ENDPOINT"
+$key="b275c27290914e8483d58854b59d869f"
+$endpoint="https://cogserv-demo.cognitiveservices.azure.com/"
 
 # Code to call Face service for face detection
 

@@ -1,5 +1,5 @@
-$predictionUrl="https://cogserv-demo.cognitiveservices.azure.com/"
-$predictionKey = "b275c27290914e8483d58854b59d869f"
+$predictionUrl="YOUR_ENDPOINT"
+$predictionKey = "YOUR_KEY"
 
 # Code to call Custom Vision service for image detection
 
