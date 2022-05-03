@@ -1,16 +1,9 @@
 $predictionUrl="YOUR_PREDICTION_URL"
 $predictionKey = "YOUR_PREDITION_KEY"
 
-
 # Code to call Custom Vision service for image classification
 
-$img_num = 1
-if ($args.count -gt 0 -And $args[0] -in (1..3))
-{
-    $img_num = $args[0]
-}
-
-$img = "https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/vision/fruit-$($img_num).jpg"
+$img = "https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/vision/fruit-1.jpg"
 
 $headers = @{}
 $headers.Add( "Prediction-Key", $predictionKey )

@@ -2,12 +2,8 @@ $key="YOUR_KEY"
 $endpoint="YOUR_ENDPOINT"
 
 # Code to call Text Analytics service to analyze sentiment in text
-$txt_file = "review1.txt"
-if ($args.count -gt 0 -And $args[0] -in ("review1.txt", "review2.txt", "review3.txt", "review4.txt"))
-{
-    $txt_file = $args[0]
-}
-$url = "https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/text/reviews/$txt_file"
+
+$url = "https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/text/reviews/review1.txt"
 
 $txt =  (Invoke-webrequest -URI $url).Content
 

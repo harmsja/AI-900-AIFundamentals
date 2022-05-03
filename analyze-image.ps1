@@ -3,14 +3,7 @@ $endpoint="YOUR_ENDPOINT"
 
 # Code to call Computer Vision service for image analysis
 
-if ($args.count -gt 0)
-{
-    $img = $args[0]
-} else {
-    $img = "https://raw.githubusercontent.com/harmsja/AI-900-AIFundamentals/main/data/vision/store-camera-1.jpg"
-}
-write-host "Image URL: "
-write-host $img
+$img = "https://raw.githubusercontent.com/harmsja/AI-900-AIFundamentals/main/data/vision/store-camera-1.jpg"
 
 $headers = @{}
 $headers.Add( "Ocp-Apim-Subscription-Key", $key )
@@ -18,7 +11,7 @@ $headers.Add( "Content-Type","application/json" )
 
 $body = "{'url' : '$img'}"
 
-write-host "Analyzing image..."
+write-host "Analyzing image: $img"
 $result = Invoke-RestMethod -Method Post `
           -Uri "$endpoint/vision/v3.2/analyze?visualFeatures=Categories,Description,Objects" `
           -Headers $headers `

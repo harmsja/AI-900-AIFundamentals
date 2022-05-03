@@ -1,16 +1,9 @@
 $key="YOUR_KEY"
 $endpoint="YOUR_ENDPOINT"
 
-
-
 # Code to call Face service for face detection
-$img_file = "store-camera-1.jpg"
-if ($args.count -gt 0 -And $args[0] -in ("store-camera-1.jpg", "store-camera-2.jpg", "store-camera-3.jpg"))
-{
-    $img_file = $args[0]
-}
 
-$img = "https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/vision/$img_file"
+$img = "https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/vision/store-camera-1.jpg"
 
 $headers = @{}
 $headers.Add( "Ocp-Apim-Subscription-Key", $key )

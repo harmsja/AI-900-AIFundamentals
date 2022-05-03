@@ -1,7 +1,6 @@
 $key="YOUR_KEY"
 $endpoint="YOUR_ENDPOINT"
 
-
 # Code to call Anomaly Detector
 write-host "Analyzing data..."
 $data = "./data/anomaly/data.json"
